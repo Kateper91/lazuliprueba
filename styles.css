@@ -1,0 +1,292 @@
+body{
+    background-color: rgb(236, 248, 248);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #444;
+}
+h1{
+    font-size: 33px;
+}
+h2{
+    font-size: 27px;
+}
+h3{
+    font-size: 21px;
+}
+h4{
+    font-size: 15px;
+}
+h5{
+    font-size: 10.2px;
+}
+a{
+    color: rgb(23, 20, 18);
+}
+a:hover{
+    text-decoration: none;
+}
+#top {
+    border-bottom: 1px solid rgb(194, 163, 136);
+    background-color: #E6BEAE;
+    background-image: linear-gradient(to bottom, #f3cbbb, #E6BEAE);
+    background-repeat: repeat-x;
+    border-color: #836e5d #cfae92 #b2947a;
+    margin: 0 0 20px 0;
+    min-height: 40px;
+}
+
+
+.dropdown >li {
+    float:left; 
+
+}
+#logo {
+    margin: 0 0 10px 0;
+}
+.col-sm-4 {
+    width: 33.33333%;
+}
+#cart > .btn{
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+}
+.btn-inverse {
+    background-color: #363636;
+}
+.col-sm-3{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#btn_buscar {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 10px 35px;
+    text-shadow: 0 1px 0 #fff;
+    color: #777;
+    background-color: #e7e7e7;
+    background-image: linear-gradient(to bottom, #eeeeee, #dddddd);
+    background-repeat: repeat-x;
+    border-color: #dddddd #dddddd #b3b3b3 #b7b7b7;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#menu{
+    margin: 10px;
+    background-color: #B2967D;
+    background-image: linear-gradient(to bottom, #B2967D, #e0bd9e);
+    background-repeat: repeat-x;
+    border-color: #836e5d #cfae92 #b2947a;
+    min-height: 40px;
+    border-radius: 5px;
+}
+#menu .nav > li >a {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgb (0 0 0 /25%);
+    padding: 10px 15px 10px 15px;
+    min-height: 15px;
+    background-color: transparent;
+}
+
+#menu .btn-navbar{
+    font-size: 15px;
+    font-stretch: expanded;
+    color: #fff;
+    padding: 2px 18px;
+    float: right;
+    background-color: #229ac8;
+    background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
+    background-repeat: repeat-x;
+    border-color: #1f90bb #1f90bb #145e7a;
+}
+.carousel{
+    position: relative;
+    background-color:rgb(238, 228, 225);
+}
+.carousel-inner {
+    display: flex;
+    margin-bottom: 250px;
+    max-width: 45em;
+    max-height: 800px;
+    margin: 0 auto;
+
+}
+.carousel-inner img {
+    width: 20px;
+    height: 440px;
+}
+
+.carousel-caption {
+    background-color: rgba(41, 23 , 1, 0.75);
+    position: absolute;
+    bottom: 1.25rem;
+    top: 0;
+    height: 100%;
+    padding-top:10px;
+    text-align: center;
+    width: 250px;
+    
+}
+
+.carousel-caption p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.carousel-caption h2{
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.carousel-caption .h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 8px;
+}
+.row {
+    margin: 10px 0 0 30px;
+}
+
+
+.img-responsive {
+    width: 250px;
+    height: 250px;
+}
+
+.col-md-3{
+    width: 33%;
+}
+.button-group button{
+    border:none;
+    float: left;
+    background-color: #EEE4E1;
+    text-align: center;
+    line-height: 30px;
+}
+/*card ejempl*/
+.card{
+    position:relative;
+    width: 250px;
+    height: 250px;
+    background: url(./imagenes/apagavelas.jfif) center no-repeat;
+    background-size: cover;
+    border-radius:20px;
+    z-index: 1;
+    overflow: hidden; 
+}
+
+.card::before,
+.card::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: calc(60% + 35px);
+    background-color: #eee4e1;
+    transition: transform .5s .25s ease-in;
+    z-index: -1;
+}
+
+.card::before {
+    top: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+    transform: translateY(-100%);
+}
+
+.card::after {
+    bottom: 0;
+    clip-path: polygon( 0 55%, 100% 0, 100% 100%, 0% 100%);
+    transform: translateY(100%);
+}
+
+.card_content {
+    opacity: 0;
+    transition: opacity .25s;
+    padding: 50px;
+}
+
+.card:hover::before,
+.card:hover::after{
+    transform: translateY(0);
+}
+.card:hover .card_content{
+    opacity: 1;
+    transition-delay: .75s;
+    text-align: center;
+}
+
+/*-------card prueba-------*/
+.card__prueba {
+    position:relative;
+    width: 250px;
+    height: 250px;
+    background: url(./imagenes/copa_diamante.jpg) center no-repeat;
+    background-size: cover;
+    border-radius:20px;
+    z-index: 1;
+    overflow: hidden; 
+}
+
+.card__prueba::before,
+.card__prueba::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card__prueba::before{
+    border-style: solid;
+    border-width: 0 0 50px 50px;
+    border-color: transparent transparent #fff transparent;
+    transition: border .25s;
+} 
+
+.card__prueba::after{
+    content: "Ver";
+    bottom: 15px;
+    right: 15px;
+    color: #151515;
+    font-size: 21px;
+    opacity: 0;
+}
+
+.card__prueba:hover::before {
+    border-width: 0 0 100px 100px;
+}
+
+.card__prueba:hover::after{
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+card_titulo {
+    margin: auto;
+    font-size: 36px;
+}
+
+
+/*-----------footer---------------*/
+footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    background-color: #303030;
+    border-top: 1px solid #ddd;
+    color: #EEE4E1;
+}
+footer h5{
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+footer a {
+    color: #ccc;
+}
